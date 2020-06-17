@@ -1,5 +1,8 @@
 version: 2.1
 jobs:
+  orbs:
+    slack: circleci/slack@0.1.0
+    cli: circleci/aws-cli@0.1.13
   build:
     docker:
     - image: circleci/openjdk:8-jdk
@@ -14,6 +17,7 @@ jobs:
     - checkout
     - run:
         command: "echo file ${AUTO_FILE} dir ${AUTO_DIR}"
+    - command: "uname -a"
 workflows:
   version: 2
   workflow:
