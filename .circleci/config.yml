@@ -1,4 +1,8 @@
 version: 2.1
+executors:
+  j7xtest:
+    docker:
+      - image: circleci/ruby:2.4.0
 jobs:
   orbs:
     slack: circleci/slack@0.1.0
