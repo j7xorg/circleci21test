@@ -10,11 +10,10 @@ jobs:
     - slack/notify:
         channel: general
         message: orb test on slack by circleci
-        webhook: https://hooks.slack.com/services/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
+        webhook: https://hooks.slack.com/services/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
 orbs:
   slack: circleci/slack@3.4.2
   cli: circleci/aws-cli@0.1.13
-
 workflows:
   version: 2.1
   info-test:
