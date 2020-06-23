@@ -6,7 +6,7 @@ jobs:
     steps:
     - checkout
     - run:
-        command "echo running build job..."
+        command: "echo running build job..."
     - slack/notify:
         channel: general
         message: orb test on slack by circleci
