@@ -6,11 +6,11 @@ jobs:
     steps:
     - checkout
     - run:
-        command: "echo running build job...."
+        command: "echo running build job....."
     - slack/notify:
         channel: "#general"
         message: orb test on slack by circleci
-        webhook: https://hooks.slack.com/services/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
+        webhook: https://hooks.slack.com/services/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
 orbs:
   slack: circleci/slack@3.4.2
   cli: circleci/aws-cli@0.1.13
