@@ -1,7 +1,5 @@
 version: 2.1
-  orbs:
-    slack: circleci/slack@3.4.2
-    cli: circleci/aws-cli@0.1.13
+
   jobs:
     build:
       docker:
@@ -14,6 +12,9 @@ version: 2.1
             channel: general
             message: orb test on slack by circleci
             webhook: https://hooks.slack.com/services/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
+  orbs:
+    slack: circleci/slack@3.4.2
+    cli: circleci/aws-cli@0.1.13
 
 
 version: 2.1
